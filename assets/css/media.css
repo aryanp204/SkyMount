@@ -1,0 +1,178 @@
+@media (max-width: 1400px) {
+  .hero-section h1 {
+    font-size: 60px;
+  }
+}
+@media (max-width: 1236px) {
+  .hero-section h1 {
+    font-size: 46px;
+  }
+  h3 {
+    font-size: 30px;
+    margin-top: 30px;
+  }
+  h3::after {
+    left: 0;
+    top: -26px;
+    font-size: 60px;
+  }
+  .equipment-details {
+    padding: 20px 30px;
+  }
+}
+@media (max-width: 1182px) {
+  .coursebtn {
+    font-size: 12px;
+    padding: 14px;
+  }
+  .course-details h5 {
+    font-size: 16px;
+  }
+}
+@media (max-width: 975px) {
+  .container {
+    max-width: 100%;
+  }
+  .hero-section h1 {
+    font-size: 50px;
+  }
+  .hero-section p {
+    max-width: 90%;
+  }
+  .sky-mountain img {
+    width: 100%;
+    margin-left: 0;
+  }
+  .coaching-class img {
+    width: 100%;
+    margin-left: 0;
+  }
+  .event-main {
+    position: static;
+  }
+  .navbar-collapse {
+    background: rgb(90, 126, 148);
+    background: linear-gradient(
+      108deg,
+      rgba(90, 126, 148, 1) 0%,
+      rgba(130, 176, 196, 1) 40%,
+      rgba(173, 204, 224, 1) 100%
+    );
+    color: white;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    top: 88px;
+    padding-left: 20px;
+  }
+  .common-spacing {
+    padding: 90px 0px;
+  }
+  .equipment-details {
+    padding: 20px 30px;
+  }
+  .winter-events {
+    padding-bottom: 90px;
+  }
+  .hero-details {
+    transform: translate(-20%, -50%);
+  }
+  .navbar {
+    margin-top: 0px;
+  }
+}
+@media (max-width: 700px) {
+  .container {
+    max-width: 100%;
+    margin: 0;
+  }
+  .navbar img {
+    width: 100%;
+    max-width: 70%;
+  }
+  .hero-section h1 {
+    font-size: 50px;
+  }
+
+  .hero-section p {
+    text-transform: capitalize;
+    width: 100%;
+    max-width: 90%;
+    margin: 20px 0px;
+  }
+
+  .navbar ul li a,
+  .navbar-nav .nav-link.active {
+    color: white;
+  }
+  .snowflake {
+    font-size: 1em;
+  }
+  .sky-mountain .row {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .coaching-class .coaching {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .equipment-details {
+    overflow-x: hidden;
+  }
+}
+@media (max-width: 500px) {
+  .container {
+    max-width: 100%;
+  }
+  .hero-section {
+    background-position: center;
+    height: 100vh;
+    max-height: 520px;
+  }
+  .hero-details {
+    padding: 0px 20px;
+    transform: translate(-20%, -30%);
+  }
+  button {
+    padding: 10px 26px;
+    font-size: 14px;
+  }
+  .hero-section h1 {
+    font-size: 36px;
+  }
+
+  .hero-section button {
+    margin-top: 230px;
+    margin-bottom: 40px;
+    width: 100%;
+  }
+  .sky-mountain,
+  .coaching-class p {
+    font-size: 14px;
+  }
+  .common-spacing {
+    padding: 60px 0px;
+  }
+  .equipment-details h3 {
+    font-size: 30px;
+  }
+  .coursebtn {
+    padding: 12px;
+  }
+  .course-details h5 {
+    font-size: 14px;
+  }
+  .coaching-class p {
+    font-size: 14px;
+    margin-bottom: 0px;
+  }
+  .winter-events {
+    padding-bottom: 60px;
+  }
+  p {
+    font-size: 14px;
+  }
+  .events-details img {
+    max-width: 100%;
+  }
+}

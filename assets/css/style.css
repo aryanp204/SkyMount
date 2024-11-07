@@ -1,0 +1,255 @@
+:root {
+  --common-heading-color-: #5a7e94;
+  --common-heading-color-bg: #5a7e9421;
+  --common-paragraph-color: #767d87;
+}
+@font-face {
+  font-family: 'Poppins';
+  src: url('../fonts/Poppins-Medium.woff2') format('woff2'),
+    url('../fonts/Poppins-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Poppins';
+  src: url('../fonts/Poppins-Regular.woff2') format('woff2'),
+    url('../fonts/Poppins-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Sansita One';
+  src: url('../fonts/SansitaOne.woff2') format('woff2'),
+    url('../fonts/SansitaOne.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Suez One';
+  src: url('../fonts/SuezOne-Regular.woff2') format('woff2'),
+    url('../fonts/SuezOne-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+/* common css */
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Poppins';
+  font-size: 16px;
+  line-height: 1.5;
+  background-color: #f5f5f5;
+  color: #333;
+  font-weight: 500;
+}
+.common-background {
+  background-color: #0000003d;
+  backdrop-filter: blur(100px);
+}
+h3 {
+  color: var(--common-heading-color-);
+  font-size: 50px;
+  font-family: 'Suez One';
+  text-transform: uppercase;
+  position: relative;
+}
+h3::after {
+  position: absolute;
+  left: 0;
+  top: -40px;
+  text-transform: capitalize;
+  color: var(--common-heading-color-bg);
+  font-size: 90px;
+  font-family: 'Sansita One';
+}
+p {
+  color: var(--common-paragraph-color);
+}
+button {
+  font-family: 'Suez one';
+  color: white;
+  padding: 14px 40px;
+  background: rgb(90, 126, 148);
+  background: linear-gradient(
+    108deg,
+    rgba(90, 126, 148, 1) 0%,
+    rgba(130, 176, 196, 1) 40%,
+    rgba(173, 204, 224, 1) 100%
+  );
+  text-transform: uppercase;
+  border: 0px solid transparent;
+  border-radius: 50px;
+  letter-spacing: 2px;
+  animation: gradient;
+  transition: 1s ease-in-out;
+}
+button:hover {
+  background: rgb(173, 204, 224);
+  background: linear-gradient(
+    108deg,
+    rgba(173, 204, 224, 1) 0%,
+    rgba(130, 176, 196, 1) 40%,
+    rgba(90, 126, 148, 1) 100%
+  );
+}
+.common-spacing {
+  padding: 120px 0px;
+}
+/* Navbar Start */
+.navbar ul li a {
+  font-weight: 500;
+}
+.navbar {
+  position: fixed;
+  z-index: 3;
+  background: transparent;
+  width: 100%;
+  padding-top: 40px;
+}
+/* Hero-section Start */
+.hero-section {
+  background-image: url('../image/hero-section/hero-section-bg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+.hero-details {
+  position: absolute;
+  top: 50%;
+  left: 20%;
+  transform: translate(-30%, -50%);
+  width: 100%;
+  max-width: 625px;
+}
+.hero-section h1 {
+  font-family: 'Suez One';
+  text-transform: uppercase;
+  font-size: 70px;
+  top: 0;
+}
+.hero-section p {
+  text-transform: capitalize;
+  width: 100%;
+  max-width: 80%;
+  margin: 49px 0px;
+}
+/* sky-mountain Start */
+.sky-mountain {
+  overflow-x: hidden;
+}
+.sky-mountain img {
+  width: 100%;
+  margin-left: 134px;
+}
+.sky-mountain h3:after {
+  content: 'Skymountain';
+}
+/* Equipment */
+.equipment {
+  background-image: url('../image/equipment-bg.png');
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow-x: hidden;
+}
+.equipment-details {
+  width: 100%;
+  max-width: 810px;
+  background-color: rgba(0, 0, 0, 0.539);
+  padding: 20px 80px;
+}
+.equipment-details h3 {
+  color: white;
+  font-size: 40px;
+}
+.equipment-details p {
+  color: white;
+}
+/* coaching section */
+.coaching-class {
+  overflow-x: hidden;
+}
+.coaching-class img {
+  width: 100%;
+  margin-left: 134px;
+}
+.coaching-class h3:after {
+  content: 'CoachingClinic';
+}
+.coaching-info img {
+  width: 100%;
+  max-width: 80px;
+  margin: 0;
+}
+.course-details {
+  margin-top: 40px;
+}
+.course-details p {
+  font-size: 14px;
+  color: #8e8e8e;
+  font-weight: 500;
+}
+.course-details h5 {
+  font-size: 22px;
+  color: #8e8e8e;
+  font-family: 'Suez One';
+}
+/* Winter Events section start */
+.winter-events {
+  padding-bottom: 120px;
+}
+.event-main {
+  position: relative;
+  left: -143px;
+  width: 100%;
+}
+.events-details h3::after {
+  content: 'Wonter Sky';
+}
+.events-details img {
+  width: 100%;
+  max-width: 90%;
+}
+/* Footer Start */
+footer {
+  background-image: url('../image/footer-bg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 80px 0px 40px 0px;
+  color: white;
+}
+footer ul {
+  padding: 0px;
+}
+footer h4 {
+  font-size: 27px;
+  font-family: 'Suez One';
+  text-transform: uppercase;
+}
+footer ul li {
+  list-style-type: none;
+}
+footer p {
+  color: white;
+  font-size: 14px;
+  font-weight: 400;
+}
+footer a {
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
+  font-weight: 400;
+}
+footer a:hover {
+  text-decoration: underline;
+}
